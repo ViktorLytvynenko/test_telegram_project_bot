@@ -1,6 +1,9 @@
 import {Telegraf} from 'telegraf';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const bot = new Telegraf(process.env.TOKEN);
+
 
 bot.start((ctx) => {
     const webAppButton = {
